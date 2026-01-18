@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nepal Open University</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <!-- Language Toggle -->
+  <div class="language-toggle">
+    <button onclick="setLanguage('en')">English</button>
+    <button onclick="setLanguage('np')">नेपाली</button>
+  </div>
+
+
+
+  <!-- Header Section -->
+  <header class="header">
+    <div class="logo">
+      <img src="Logo.op.jpeg" alt="Nepal Open University Logo">
+      <span id="university-name">Nepal Open University</span>
+    </div>
+    <nav class="navbar">
+      <ul>
+        <li><a href="#Home" data-en="Home" data-np="गृहपृष्ठ">Home</a></li>
+        <li><a href="#About" data-en="About" data-np="हाम्रोबारे">About</a></li>
+        <li><a href="#Programs" data-en="Programs" data-np="कार्यक्रमहरू">Programs</a></li>
+        <li><a href="#Admissions" data-en="Admissions" data-np="प्रवेश">Admissions</a></li>
+        <li><a href="#Resources" data-en="Resources" data-np="स्रोतहरू">Resources</a></li>
+        <li><a href="#News" data-en="News" data-np="समाचार">News</a></li>
+        <li><a href="#Notice only for reading" data-en="Notice only for reading" data-np="पढ्नको लागि मात्र सूचना">Notice only for reading</a></li>
+        <li><a href="#Student Panel" data-en="News" data-np="विद्यार्थी प्यानल">Student Panel</a></li>
+        <li><a href="#Elibrary" data-en="News" data-np="इलिब्रेरी">Elibrary</a></li>
+      </ul>
+      <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1 id="hero-title" data-en="Welcome to Nepal Open University" data-np="नेपाल खुला विश्वविद्यालयमा स्वागत छ">Welcome to Nepal Open University</h1>
+      <div class="button-container">
+        <button onclick="scrollToSection('programs')" data-en="Explore Programs" data-np="कार्यक्रमहरू अन्वेषण गर्नुहोस्">Explore Programs</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Programs Section -->
+  <section id="programs" class="content-section">
+    <h2 data-en="Programs & Courses" data-np="कार्यक्रम र पाठ्यक्रम">Programs & Courses</h2>
+    <p data-en="Nepal Open University offers a wide variety of programs designed to suit diverse academic interests and career aspirations. These include undergraduate, graduate, and diploma courses in disciplines such as education, management, information technology, and health sciences. The programs emphasize flexibility, making them ideal for working professionals, geographically isolated students, and lifelong learners."
+       data-np="नेपाल खुला विश्वविद्यालयले विभिन्न शैक्षिक रुचिहरू र करियर आकांक्षाहरू अनुरूप डिजाइन गरिएका विभिन्न कार्यक्रमहरू प्रदान गर्दछ। यसमा शिक्षा, व्यवस्थापन, सूचना प्रविधि, र स्वास्थ्य विज्ञान जस्ता विषयहरूमा स्नातक, स्नातक र डिप्लोमा पाठ्यक्रमहरू समावेश छन्। कार्यक्रमहरूले लचिलोपनलाई जोड दिन्छ, तिनीहरूलाई काम गर्ने पेशेवरहरू, भौगोलिक रूपमा पृथक विद्यार्थीहरू, र आजीवन शिक्षार्थीहरूको लागि आदर्श बनाउँछ।">
+       Nepal Open University offers a wide variety of programs designed to suit diverse academic interests and career aspirations. These include undergraduate, graduate, and diploma courses in disciplines such as education, management, information technology, and health sciences. The programs emphasize flexibility, making them ideal for working professionals, geographically isolated students, and lifelong learners.
+    </p>
+    <button onclick="scrollToSection('admission')" data-en="Apply Now" data-np="अहिले आवेदन दिनुहोस्">Apply Now</button>
+  </section>
+
+  <!-- Student Resources Section -->
+<section id="student-resources" class="content-section">
+  <h2 data-en="Student Resources" data-np="विद्यार्थी स्रोतहरू">Student Resources</h2>
+  <p data-en="Students have access to a range of resources, including e-libraries, course materials, research guides, and support services. These resources are designed to enhance learning experiences, foster engagement, and ensure academic success, particularly for distance learners." 
+     data-np="विद्यार्थीहरूसँग ई-पुस्तकालयहरू, पाठ्यक्रम सामग्रीहरू, अनुसन्धान गाइडहरू, र समर्थन सेवाहरू सहित स्रोतहरूको दायरामा पहुँच छ। यी स्रोतहरू सिक्ने अनुभवहरू बृद्धि गर्न, संलग्नता बढाउन र शैक्षिक सफलता सुनिश्चित गर्नका लागि डिजाइन गरिएको हो, विशेष गरी दूरी शिक्षार्थीहरूका लागि।">
+     Students have access to a range of resources, including e-libraries, course materials, research guides, and support services. These resources are designed to enhance learning experiences, foster engagement, and ensure academic success, particularly for distance learners.
+  </p>
+  <button onclick="scrollToSection('resources')" data-en="Learn More" data-np="थप जान्नुहोस्">Learn More</button>
+</section>
+
+<!-- Faculty Services Section -->
+<section id="faculty-services" class="content-section">
+  <h2 data-en="Faculty Services" data-np="संकाय सेवाहरू">Faculty Services</h2>
+  <p data-en="Faculty members benefit from tools that support course management, research activities, and professional development. These services include platforms for managing e-learning content, organizing research data, and collaborating with other educators." 
+     data-np="संकाय सदस्यहरूले पाठ्यक्रम व्यवस्थापन, अनुसन्धान गतिविधिहरू, र व्यावसायिक विकासलाई समर्थन गर्ने उपकरणहरूबाट लाभ उठाउँछन्। यी सेवाहरूमा ई-शिक्षा सामग्री व्यवस्थापन गर्न, अनुसन्धान डेटा व्यवस्थित गर्न र अन्य शिक्षकहरूसँग सहकार्य गर्ने प्लेटफर्महरू समावेश छन्।">
+     Faculty members benefit from tools that support course management, research activities, and professional development. These services include platforms for managing e-learning content, organizing research data, and collaborating with other educators.
+  </p>
+  <button onclick="scrollToSection('faculty')" data-en="Explore Services" data-np="सेवाहरू अन्वेषण गर्नुहोस्">Explore Services</button>
+</section>
+
+<!-- Admission Section -->
+<section id="admission" class="content-section">
+  <h2 data-en="Admission" data-np="प्रवेश">Admission</h2>
+  <p data-en="The admission process at NOU is straightforward and accessible, providing details on eligibility, deadlines, and required documents. It caters to a diverse student body, welcoming learners from various backgrounds into a vibrant academic environment." 
+     data-np="NOU मा भर्ना प्रक्रिया सीधा र पहुँचयोग्य छ, योग्यता, समयसीमा, र आवश्यक कागजातहरूमा विवरणहरू प्रदान गर्दै। यसले एक विविध विद्यार्थी निकायलाई पूरा गर्दछ, विभिन्न पृष्ठभूमिका विद्यार्थीहरूलाई जीवन्त शैक्षिक वातावरणमा स्वागत गर्दछ।">
+     The admission process at NOU is straightforward and accessible, providing details on eligibility, deadlines, and required documents. It caters to a diverse student body, welcoming learners from various backgrounds into a vibrant academic environment.
+  </p>
+  <button onclick="scrollToSection('apply-now')" data-en="Get Started" data-np="सुरु गर्नुहोस्">Get Started</button>
+</section>
+
+<!-- Contact Us Section -->
+<section id="contact-us" class="content-section">
+  <h2 data-en="Contact Us" data-np="हामीलाई सम्पर्क गर्नुहोस्">Contact Us</h2>
+  <p data-en="NOU encourages open communication with its stakeholders. Students and other individuals can reach out via email or phone for inquiries, ensuring prompt and helpful support." 
+     data-np="NOU ले आफ्ना सरोकारवालाहरूसँग खुला सञ्चारलाई प्रोत्साहन गर्छ। विद्यार्थी र अन्य व्यक्तिहरूले सोधपुछको लागि इमेल वा फोन मार्फत सम्पर्क गर्न सक्छन्, तुरुन्त र सहयोगी समर्थन सुनिश्चित गर्दै।">
+     NOU encourages open communication with its stakeholders. Students and other individuals can reach out via email or phone for inquiries, ensuring prompt and helpful support.
+  </p>
+  <button onclick="scrollToSection('contact')" data-en="Contact Now" data-np="अहिले सम्पर्क गर्नुहोस्">Contact Now</button>
+</section>
+
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <p>&copy; 2024 <span id="footer-university-name" data-en="Nepal Open University" data-np="नेपाल खुला विश्वविद्यालय">Nepal Open University</span>. All rights reserved.</p>
+  </footer>
+
+
+</body>
+</html>
